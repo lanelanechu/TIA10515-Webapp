@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page import="com.space.model.*"%>
+<%@ page import="com.space.util.*"%>
 <%@ page import="java.util.*"%>
 
 <%
@@ -129,8 +130,7 @@ textarea.form-control {
 	}
 }
 </style>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ6X2aN64zPn-o8FXJHJfrZaWDuUHst3Q&libraries=places"></script>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ApiKeyManager.getGoogleMapsApiKey() %>&libraries=places"></script>
 
 </head>
 <body>
